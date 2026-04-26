@@ -1,0 +1,121 @@
+.ar-modal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  font-family: var(--input-font-family, system-ui, sans-serif);
+  color: var(--input-text, #e6e6e6);
+}
+
+.ar-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.ar-modal-frame {
+  position: relative;
+  margin: 5vh auto 0;
+  max-width: min(92vw, 880px);
+  background: var(--comfy-menu-bg, #202020);
+  border: 1px solid var(--border-color, #444);
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  max-height: 86vh;
+}
+
+.ar-modal-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color, #444);
+}
+
+.ar-modal-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.ar-modal-meta {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.ar-modal-body {
+  flex: 1;
+  overflow: auto;
+  padding: 16px;
+}
+
+.ar-preview-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: #0c0c0c;
+  border-radius: 4px;
+}
+
+.ar-preview-img {
+  max-width: 100%;
+  max-height: 70vh;
+  display: block;
+  border-radius: 4px;
+}
+
+.ar-modal-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border-color, #444);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 8px 8px;
+}
+
+.ar-btn {
+  appearance: none;
+  border: 1px solid var(--border-color, #444);
+  background: var(--comfy-input-bg, #303030);
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+  min-width: 96px;
+}
+
+.ar-btn:hover:not(:disabled) {
+  background: var(--comfy-input-bg-hover, #383838);
+}
+
+.ar-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ar-btn-approve {
+  border-color: #2f7a3a;
+  background: #1f5a28;
+  color: #ecffec;
+}
+
+.ar-btn-approve:hover:not(:disabled) {
+  background: #2a7a35;
+}
+
+.ar-btn-reject {
+  border-color: #7a2f2f;
+  background: #5a1f1f;
+  color: #ffecec;
+}
+
+.ar-btn-reject:hover:not(:disabled) {
+  background: #7a2a2a;
+}
