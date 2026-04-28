@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-approvereject"
-version = "0.1.0"
+version = "0.1.1"
 description = "An in-graph approve/reject gate node for ComfyUI — pause execution, preview the candidate, and on reject re-fire the upstream subgraph with a new seed."
 readme = "README.md"
 requires-python = ">=3.10"

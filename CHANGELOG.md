@@ -2,6 +2,13 @@
 
 All notable changes to ComfyUI-ApproveReject will be documented here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.1.1](https://github.com/modbender/ComfyUI-ApproveReject/compare/v0.1.0...v0.1.1) (2026-04-28)
+
+
+### CI
+
+* add release-please + pytest workflows ([483bdae](https://github.com/modbender/ComfyUI-ApproveReject/commit/483bdae57696c63c7300d37ddd1d77dff93d6fe6))
+
 ## [0.1.0] — 2026-04-25
 
 ### Added
